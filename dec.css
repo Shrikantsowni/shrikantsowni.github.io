@@ -32,11 +32,7 @@ body {
     background-repeat: repeat;
 }
 
-.main-video {
-    height: 25rem;
-    width: 60%;
-    margin-left: 15rem;
-}
+
 
 .video-heading {
     color: rgb(72, 255, 0);
@@ -53,12 +49,12 @@ body {
     text-shadow: 1px 1px 1px red;
 }
 
+.videos {
+    text-align: center;
+    color: white
+}
+
 @media (max-width: 600px) {
-    .main-video {
-        height: 20rem;
-        width: 22.5rem;
-        margin-left: 0;
-    }
 
     .video-heading {
         color: rgb(72, 255, 0);
@@ -295,5 +291,199 @@ footer a:hover {
     .accordion-button {
         font-size: 1rem;
         padding: 0.8rem;
+    }
+}
+
+
+
+.thumbnail {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+}
+
+.thumbnail img {
+    width: 560px;
+    height: 315px;
+    border: 0;
+    position: absolute;
+}
+
+
+.scrollable-div {
+    position: relative;
+    margin-left: 45rem;
+    width: 400px;
+    text-align: center;
+    height: 313px;
+    overflow: auto;
+    color: #ffffff;
+    margin-top: 1px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #3f7cff;
+}
+
+.scrollable-div p {
+    margin: 0 0 10px;
+    /* पैराग्राफ के बीच गैप */
+}
+
+.thumbnail {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+}
+
+.thumbnail img {
+    width: 560px;
+    height: 315px;
+    border: 0;
+    position: absolute;
+}
+
+.thumbnail {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    /* Changed to relative */
+    max-width: 100%;
+    /* Ensure it doesn't overflow */
+}
+
+.scrollable-div {
+    position: relative;
+    /* Make sure it aligns properly */
+    margin-left: 40rem;
+    /* Center align for all screens */
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    height: 313px;
+    overflow: auto;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #3f7cff;
+}
+
+
+/* Responsive Code */
+
+/* स्क्रीन 1024px से कम होने पर */
+@media (max-width: 1024px) {
+    .thumbnail img {
+        width: 100%;
+        height: auto;
+        /* Aspect ratio बनाए रखने के लिए */
+        position: relative;
+        /* Absolute हटाने से फ्लो ठीक रहेगा */
+    }
+
+
+    .thumbnail {
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        /* Changed to relative */
+        max-width: 100%;
+        /* Ensure it doesn't overflow */
+    }
+
+    .scrollable-div {
+        position: relative;
+        /* Make sure it aligns properly */
+        margin: 20px auto;
+        /* Center align for all screens */
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+        height: 313px;
+        overflow: auto;
+        color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #3f7cff;
+    }
+}
+
+/* स्क्रीन 768px से कम होने पर */
+@media (max-width: 768px) {
+    .thumbnail img {
+        width: 100%;
+        /* पूरी स्क्रीन की चौड़ाई */
+        height: auto;
+    }
+
+
+    .thumbnail {
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        /* Changed to relative */
+        max-width: 100%;
+        /* Ensure it doesn't overflow */
+    }
+
+    .scrollable-div {
+        position: relative;
+        /* Make sure it aligns properly */
+        margin: 20px auto;
+        /* Center align for all screens */
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+        height: 313px;
+        overflow: auto;
+        color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #3f7cff;
+    }
+}
+
+/* स्क्रीन 480px से कम होने पर (मोबाइल व्यू) */
+@media (max-width: 480px) {
+    .thumbnail img {
+        width: 100%;
+        /* मोबाइल पर पूरी चौड़ाई */
+        height: auto;
+    }
+
+
+    .thumbnail {
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        /* Changed to relative */
+        max-width: 100%;
+        /* Ensure it doesn't overflow */
+    }
+
+    .scrollable-div {
+        position: relative;
+        /* Make sure it aligns properly */
+        margin: 20px auto;
+        /* Center align for all screens */
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+        height: 313px;
+        overflow: auto;
+        color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #3f7cff;
     }
 }
